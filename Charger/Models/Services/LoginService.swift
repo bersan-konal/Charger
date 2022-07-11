@@ -15,12 +15,22 @@ class LoginService {
         let parameters = ["email": email, "deviceUDID": udid]
         AF.request(url, method: .post, parameters: parameters, encoder: .json).validate().responseDecodable(of: LoginResponseModel.self) { model in
             if let response = model.value {
-                print("asdasd")
                 completion(response)
             }
             else {
-                print("Else condition.")
+                print("login error")
             }
+        }
+    }
+    //bu fonksiyon taşınacak.
+    func getCities(userId: Int, header: HTTPHeaders, completion: @escaping ([String]) -> Void) {
+        let url = "http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080/provinces?userID=\(userId)"
+        
+        AF.request(url, method: .get, headers: header).validate().responseDecodable(of: [String].self) { response in
+            if let resp = response.value {
+                completion(resp)
+            }
+            print(response)
         }
     }
     

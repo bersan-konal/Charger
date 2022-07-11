@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         if let email = emailTextField.text {
             loginVM.didLogin(email: email, udid: self.udid)
         }
-        
+        performSegue(withIdentifier: "loginSegue", sender: self)
     }
 }
 
