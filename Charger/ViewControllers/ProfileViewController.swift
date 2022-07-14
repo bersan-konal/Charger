@@ -9,12 +9,18 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    let profileVM = ProfileViewModel()
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var deviceIdLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = .white
+        self.containerView.layer.cornerRadius = containerView.frame.height / 7
+        
+        emailLabel.text = profileVM.email
+        deviceIdLabel.text = profileVM.deviceId
         // Do any additional setup after loading the view.
     }
     

@@ -21,6 +21,8 @@
 		3CB73641287C6AD000CC2547 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73640287C6AD000CC2547 /* ProfileViewController.swift */; };
 		3CB73643287C6C5800CC2547 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73642287C6C5800CC2547 /* ProfileViewModel.swift */; };
 		3CB73645287C6F1F00CC2547 /* ReservationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */; };
+		3CB73648287DC60600CC2547 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73647287DC60600CC2547 /* UserManager.swift */; };
+		3CB7364A287DC6AE00CC2547 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73649287DC6AE00CC2547 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		3CB73640287C6AD000CC2547 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3CB73642287C6C5800CC2547 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsViewModel.swift; sourceTree = "<group>"; };
+		3CB73647287DC60600CC2547 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		3CB73649287DC6AE00CC2547 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				3C81D9022872C80700B7270E /* AppDelegate.swift */,
 				3C81D9042872C80700B7270E /* SceneDelegate.swift */,
+				3CB73647287DC60600CC2547 /* UserManager.swift */,
 				3C81D91D2879CFCA00B7270E /* Models */,
 				3C81D91C2879CFBB00B7270E /* ViewModels */,
 				3C81D9162872D29000B7270E /* ViewControllers */,
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3C81D9242879D37300B7270E /* LoginModel.swift */,
+				3CB73649287DC6AE00CC2547 /* UserViewModel.swift */,
 				3C81D91E2879CFD500B7270E /* Services */,
 			);
 			path = Models;
@@ -208,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C81D9252879D37300B7270E /* LoginModel.swift in Sources */,
+				3CB7364A287DC6AE00CC2547 /* UserViewModel.swift in Sources */,
 				3C81D9072872C80700B7270E /* LoginViewController.swift in Sources */,
 				3CB7363F287C5FD900CC2547 /* ReservationsViewController.swift in Sources */,
 				3CB73645287C6F1F00CC2547 /* ReservationsViewModel.swift in Sources */,
@@ -216,6 +223,7 @@
 				3C81D9032872C80700B7270E /* AppDelegate.swift in Sources */,
 				3C81D9052872C80700B7270E /* SceneDelegate.swift in Sources */,
 				3CB73641287C6AD000CC2547 /* ProfileViewController.swift in Sources */,
+				3CB73648287DC60600CC2547 /* UserManager.swift in Sources */,
 				3C81D9232879D0BF00B7270E /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

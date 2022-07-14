@@ -8,8 +8,12 @@
 import Foundation
 
 class ProfileViewModel {
-    var email: String?
-    var deviceId: String?
+    var email: String
+    var deviceId: String
     
+    init() {
+        self.email = UserManager.shared.currentUser.email
+        self.deviceId = UserManager.shared.currentUser.udid
+    }
     
 }

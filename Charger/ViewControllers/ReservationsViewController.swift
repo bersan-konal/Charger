@@ -8,13 +8,15 @@
 import UIKit
 
 class ReservationsViewController: UIViewController {
+
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profileButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(ciColor: .white)]
-       
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func profileButtonClicked(_ sender: UIBarButtonItem) {
@@ -33,5 +35,63 @@ class ReservationsViewController: UIViewController {
     }
     */
 
+}
+extension ReservationsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var view = UIView()
+        view.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: tableView.visibleSize)
+        view = handleEmptyTableView()
+        
+        
+        tableView.backgroundView = view
+        return 0
+    }
+    func handleEmptyTableView() -> UIView{
+        let view = UIView()
+        
+        view.backgroundColor = UIColor(named: "backgroundColor")
+        let image = UIImageView(image: UIImage(named: "emptyLogo"))
+        let messageTitleLabel = UILabel()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        messageTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        messageTitleLabel.text = "Henüz bir randevu oluşturmadınız."
+        messageTitleLabel.textColor = .white
+        messageTitleLabel.font = UIFont.boldSystemFont(ofSize: 23)
+        messageTitleLabel.textAlignment = .center
+        messageTitleLabel.lineBreakMode = .byWordWrapping
+        messageTitleLabel.numberOfLines = 0
+        
+        let messageBodyLabel = UILabel()
+        messageBodyLabel.translatesAutoresizingMaskIntoConstraints = false
+        messageBodyLabel.text = "Oluşturulan randevular burada listelenir."
+        messageBodyLabel.textColor = .lightGray
+        messageBodyLabel.font = UIFont.systemFont(ofSize: 16)
+        messageBodyLabel.textAlignment = .center
+        messageBodyLabel.lineBreakMode = .byWordWrapping
+        messageBodyLabel.numberOfLines = 0
+        
+        view.addSubview(image)
+        view.addSubview(messageTitleLabel)
+        view.addSubview(messageBodyLabel)
+        
+        
+        NSLayoutConstraint.activate([
+            image.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 100),
+            image.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            messageTitleLabel.topAnchor.constraint(equalTo: image.bottomAnchor),
+            messageTitleLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor,constant: 30),
+            messageTitleLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor,constant: -30),
+            messageBodyLabel.topAnchor.constraint(equalTo: messageTitleLabel.layoutMarginsGuide.bottomAnchor, constant: 15),
+            messageBodyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        return view
+       
+    }
 }
 
