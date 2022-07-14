@@ -23,6 +23,7 @@
 		3CB73645287C6F1F00CC2547 /* ReservationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */; };
 		3CB73648287DC60600CC2547 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73647287DC60600CC2547 /* UserManager.swift */; };
 		3CB7364A287DC6AE00CC2547 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73649287DC6AE00CC2547 /* UserViewModel.swift */; };
+		3CB7364C2880769E00CC2547 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7364B2880769E00CC2547 /* CitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsViewModel.swift; sourceTree = "<group>"; };
 		3CB73647287DC60600CC2547 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		3CB73649287DC6AE00CC2547 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3CB7364B2880769E00CC2547 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				3C81D9062872C80700B7270E /* LoginViewController.swift */,
 				3CB7363E287C5FD900CC2547 /* ReservationsViewController.swift */,
 				3CB73640287C6AD000CC2547 /* ProfileViewController.swift */,
+				3CB7364B2880769E00CC2547 /* CitiesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				3CB73641287C6AD000CC2547 /* ProfileViewController.swift in Sources */,
 				3CB73648287DC60600CC2547 /* UserManager.swift in Sources */,
 				3C81D9232879D0BF00B7270E /* LoginService.swift in Sources */,
+				3CB7364C2880769E00CC2547 /* CitiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

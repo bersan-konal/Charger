@@ -51,13 +51,17 @@ extension ReservationsViewController: UITableViewDelegate, UITableViewDataSource
         tableView.backgroundView = view
         return 0
     }
+    @objc func createReservationButtonClicked() {
+        
+    }
     func handleEmptyTableView() -> UIView{
         let view = UIView()
         
         view.backgroundColor = UIColor(named: "backgroundColor")
         let image = UIImageView(image: UIImage(named: "emptyLogo"))
-        let messageTitleLabel = UILabel()
         image.translatesAutoresizingMaskIntoConstraints = false
+        
+        let messageTitleLabel = UILabel()
         messageTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         messageTitleLabel.text = "Henüz bir randevu oluşturmadınız."
         messageTitleLabel.textColor = .white
@@ -75,19 +79,27 @@ extension ReservationsViewController: UITableViewDelegate, UITableViewDataSource
         messageBodyLabel.lineBreakMode = .byWordWrapping
         messageBodyLabel.numberOfLines = 0
         
+        let createReservationButton = UIButton()
+        createReservationButton.translatesAutoresizingMaskIntoConstraints = false
+        createReservationButton.titleLabel?.text = ""
+        createReservationButton.setImage(UIImage(named: "createReservationButton"), for: .normal)
+        createReservationButton.addTarget(self, action: #selector(createReservationButtonClicked), for: .touchUpInside)
+        
         view.addSubview(image)
         view.addSubview(messageTitleLabel)
         view.addSubview(messageBodyLabel)
-        
+        view.addSubview(createReservationButton)
         
         NSLayoutConstraint.activate([
             image.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 100),
             image.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            messageTitleLabel.topAnchor.constraint(equalTo: image.bottomAnchor),
+            messageTitleLabel.topAnchor.constraint(equalTo: image.bottomAnchor,constant: 35),
             messageTitleLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor,constant: 30),
             messageTitleLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor,constant: -30),
-            messageBodyLabel.topAnchor.constraint(equalTo: messageTitleLabel.layoutMarginsGuide.bottomAnchor, constant: 15),
-            messageBodyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            messageBodyLabel.topAnchor.constraint(equalTo: messageTitleLabel.layoutMarginsGuide.bottomAnchor, constant: 30),
+            messageBodyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            createReservationButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -90),
+            createReservationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
         return view

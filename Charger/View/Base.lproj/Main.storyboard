@@ -115,11 +115,48 @@
                         <outlet property="profileButton" destination="faq-pr-Acj" id="lIZ-Eb-ggD"/>
                         <outlet property="tableView" destination="raW-pb-U02" id="tST-22-kQT"/>
                         <segue destination="9Cg-na-LXE" kind="show" identifier="profileSegue" id="Nr6-w9-KqI"/>
+                        <segue destination="QPF-P7-ySM" kind="show" id="7pu-cT-aBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gyk-1p-35O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1927.5362318840582" y="124.55357142857142"/>
+        </scene>
+        <!--Cities View Controller-->
+        <scene sceneID="C6H-Nd-6JY">
+            <objects>
+                <viewController id="QPF-P7-ySM" customClass="CitiesViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SbF-8I-JTE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JBv-WS-wwC">
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.26274509800000001" green="0.28627450980000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sev-nB-fsJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iqO-Iq-GLq"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.28627450980000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iqO-Iq-GLq" firstAttribute="trailing" secondItem="JBv-WS-wwC" secondAttribute="trailing" id="3ud-0s-sBn"/>
+                            <constraint firstItem="sev-nB-fsJ" firstAttribute="trailing" secondItem="iqO-Iq-GLq" secondAttribute="trailing" id="9JN-NV-raf"/>
+                            <constraint firstItem="JBv-WS-wwC" firstAttribute="leading" secondItem="iqO-Iq-GLq" secondAttribute="leading" id="9gl-b1-QdK"/>
+                            <constraint firstItem="sev-nB-fsJ" firstAttribute="top" secondItem="iqO-Iq-GLq" secondAttribute="top" id="F9A-aG-Qs3"/>
+                            <constraint firstAttribute="bottom" secondItem="JBv-WS-wwC" secondAttribute="bottom" id="HlK-Zq-mxK"/>
+                            <constraint firstItem="sev-nB-fsJ" firstAttribute="leading" secondItem="iqO-Iq-GLq" secondAttribute="leading" id="QeN-PI-QIP"/>
+                            <constraint firstItem="JBv-WS-wwC" firstAttribute="top" secondItem="sev-nB-fsJ" secondAttribute="bottom" id="ZNk-XD-sZi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vcY-4Q-z25"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5s-T8-Dd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742" y="680"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="L2K-nv-f7W">
