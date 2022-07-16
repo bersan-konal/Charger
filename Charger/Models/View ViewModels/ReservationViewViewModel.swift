@@ -9,9 +9,8 @@ import Foundation
 
 struct ReservationViewViewModel {
     let city: String
-    let address: String
-    let distance: Float
+    var address: String
+    var distance: Float
     let availableSockets: Int
-    
     
 }

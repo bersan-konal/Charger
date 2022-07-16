@@ -25,11 +25,19 @@ class ReservationsViewModel {
             }
             
             let items = filteredData.map {
-                ReservationViewViewModel.init(city: $0.geoLocation.province, address: $0.geoLocation.address, distance: $0.distanceInKM ?? 0.0, availableSockets: $0.socketCount - $0.occupiedSocketCount)
+                ReservationViewViewModel.init(city: $0.geoLocation.province, address: self.getDistrict(address: $0.geoLocation.address), distance: self.getDistance(distance: $0.distanceInKM ?? 0.0) , availableSockets: $0.socketCount - $0.occupiedSocketCount)
             }
             self.delegate?.didReservationsFetch(items: items)
             print(items)
         }
+    }
+    func getDistrict(address: String) -> String {
+        let district = address.components(separatedBy: ",")
+        return district[0]
+    }
+    func getDistance(distance: Float) -> Float{
+        let formattedDistance = Float(round(distance * 10) / 10)
+        return formattedDistance
     }
 }
 

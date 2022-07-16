@@ -12,7 +12,7 @@ class CitiesViewController: UIViewController, CitiesViewModelDelegate{
     @IBOutlet weak var searchBar: UISearchBar!
     var filteredCities: [String] = []
     var initialCities: [String] = []
-    
+    var city: String?
     var citiesVM = CitiesViewModel()
     
     var isSearchBarEmpty: Bool {
@@ -50,7 +50,20 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if isSearchBarEmpty {
+            self.city = initialCities[indexPath.row]
+        }
+        else {
+            self.city = filteredCities[indexPath.row]
+        }
         self.performSegue(withIdentifier: "createReservationSegue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createReservationSegue" {
+                if let nextViewController = segue.destination as? CreateReservationViewController {
+                    nextViewController.city = self.city
+                }
+            }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath)
