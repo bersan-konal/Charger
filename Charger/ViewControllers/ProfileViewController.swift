@@ -23,16 +23,9 @@ class ProfileViewController: UIViewController {
         deviceIdLabel.text = profileVM.deviceId
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logoutPressed(_ sender: UIButton) {
+        profileVM.didLogout()
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    */
-
 }

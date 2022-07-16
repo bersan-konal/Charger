@@ -29,6 +29,8 @@ class StationsViewController: UIViewController {
         tableView.backgroundColor = UIColor(named: "backgroundColor")
         locationManager.requestLocation()
         reservationsVM.delegate = self
+        searchBar.barTintColor = UIColor(named: "backgroundColor")
+        searchBar.searchTextField.textColor = .white
         self.navigationController?.navigationBar.barTintColor = UIColor(named: "backgroundColor")
         
         tableView.register(UINib(nibName: "ReservationTableViewCell", bundle: nil), forCellReuseIdentifier: "reservationCell")
@@ -70,14 +72,12 @@ extension StationsViewController: CLLocationManagerDelegate {
         if let location = locations.first {
                 let latitude = Float(location.coordinate.latitude)
                 let longitude = Float(location.coordinate.longitude)
-                // Handle location update
+               
                 if let city = city {
                     reservationsVM.didGetStations(city: city , userLat: latitude, userLong: longitude)
-                    
-                    
-                        tableView.reloadData()
-                        label.text = "\(city) şehri için \(stations.count) sonuç gösteriliyor."
-                    
+                    tableView.reloadData()
+                    label.text = "\(city) şehri için \(stations.count) sonuç gösteriliyor."
+                    print(stations.count)
                 }
             }
     }

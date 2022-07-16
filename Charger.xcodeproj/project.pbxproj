@@ -32,6 +32,7 @@
 		3CB7365A288197FB00CC2547 /* ReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73659288197FB00CC2547 /* ReservationModel.swift */; };
 		3CB7365D2881FE1A00CC2547 /* StationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7365C2881FE1A00CC2547 /* StationsViewViewModel.swift */; };
 		3CB7365F2882DEDD00CC2547 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */; };
+		3CB736612883338200CC2547 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736602883338200CC2547 /* ProfileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		3CB73659288197FB00CC2547 /* ReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationModel.swift; sourceTree = "<group>"; };
 		3CB7365C2881FE1A00CC2547 /* StationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewViewModel.swift; sourceTree = "<group>"; };
 		3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
+		3CB736602883338200CC2547 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				3C81D9222879D0BF00B7270E /* LoginService.swift */,
 				3CB7364F28807B0200CC2547 /* CitiesService.swift */,
 				3CB736572881979500CC2547 /* StationsService.swift */,
+				3CB736602883338200CC2547 /* ProfileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				3C81D9232879D0BF00B7270E /* LoginService.swift in Sources */,
 				3CB7364C2880769E00CC2547 /* CitiesViewController.swift in Sources */,
 				3CB7365028807B0200CC2547 /* CitiesService.swift in Sources */,
+				3CB736612883338200CC2547 /* ProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
