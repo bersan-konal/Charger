@@ -185,7 +185,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6We-5o-AFd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6We-5o-AFd">
                                 <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -204,8 +204,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3H4-v8-L0d"/>
                     <connections>
-                        <outlet property="searchBar" destination="Tkf-1u-pBp" id="HcN-OZ-3FU"/>
-                        <outlet property="tableView" destination="6We-5o-AFd" id="eUz-qq-dIP"/>
+                        <outlet property="searchBar" destination="Tkf-1u-pBp" id="zVD-IP-QKA"/>
+                        <outlet property="tableView" destination="6We-5o-AFd" id="6OR-0E-4zT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uW-B1-FAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

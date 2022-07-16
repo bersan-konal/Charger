@@ -12,4 +12,6 @@ struct ReservationViewViewModel {
     let address: String
     let distance: Float
     let availableSockets: Int
+    
+    
 }

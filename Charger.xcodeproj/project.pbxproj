@@ -28,10 +28,10 @@
 		3CB7365028807B0200CC2547 /* CitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7364F28807B0200CC2547 /* CitiesService.swift */; };
 		3CB7365228818FDE00CC2547 /* CreateReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7365128818FDE00CC2547 /* CreateReservationViewController.swift */; };
 		3CB736552881901C00CC2547 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */; };
-		3CB736562881901C00CC2547 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB736542881901C00CC2547 /* ReservationTableViewCell.xib */; };
 		3CB736582881979500CC2547 /* ReservationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736572881979500CC2547 /* ReservationService.swift */; };
 		3CB7365A288197FB00CC2547 /* ReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73659288197FB00CC2547 /* ReservationModel.swift */; };
 		3CB7365D2881FE1A00CC2547 /* ReservationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7365C2881FE1A00CC2547 /* ReservationViewViewModel.swift */; };
+		3CB7365F2882DEDD00CC2547 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,10 +57,10 @@
 		3CB7364F28807B0200CC2547 /* CitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesService.swift; sourceTree = "<group>"; };
 		3CB7365128818FDE00CC2547 /* CreateReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReservationViewController.swift; sourceTree = "<group>"; };
 		3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
-		3CB736542881901C00CC2547 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
 		3CB736572881979500CC2547 /* ReservationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationService.swift; sourceTree = "<group>"; };
 		3CB73659288197FB00CC2547 /* ReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationModel.swift; sourceTree = "<group>"; };
 		3CB7365C2881FE1A00CC2547 /* ReservationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewViewModel.swift; sourceTree = "<group>"; };
+		3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				3C81D9082872C80700B7270E /* Main.storyboard */,
+				3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */,
 				3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */,
-				3CB736542881901C00CC2547 /* ReservationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			files = (
 				3C81D90F2872C80900B7270E /* LaunchScreen.storyboard in Resources */,
 				3C81D90C2872C80900B7270E /* Assets.xcassets in Resources */,
-				3CB736562881901C00CC2547 /* ReservationTableViewCell.xib in Resources */,
+				3CB7365F2882DEDD00CC2547 /* ReservationTableViewCell.xib in Resources */,
 				3C81D90A2872C80700B7270E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

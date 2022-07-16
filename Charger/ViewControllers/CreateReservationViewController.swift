@@ -48,7 +48,7 @@ extension CreateReservationViewController: UITableViewDelegate, UITableViewDataS
         return reservations.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 200
     }
     
     
