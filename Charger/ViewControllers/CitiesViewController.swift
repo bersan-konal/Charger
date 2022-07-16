@@ -49,7 +49,9 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
             return filteredCities.count
         }
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "createReservationSegue", sender: self)
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath)
         if isSearchBarEmpty {

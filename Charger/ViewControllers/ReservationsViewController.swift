@@ -54,6 +54,10 @@ extension ReservationsViewController: UITableViewDelegate, UITableViewDataSource
     @objc func createReservationButtonClicked() {
         performSegue(withIdentifier: "citySegue", sender: self)
     }
+    
+    
+}
+extension ReservationsViewController {
     func handleEmptyTableView() -> UIView{
         let view = UIView()
         
@@ -106,4 +110,3 @@ extension ReservationsViewController: UITableViewDelegate, UITableViewDataSource
        
     }
 }
-
