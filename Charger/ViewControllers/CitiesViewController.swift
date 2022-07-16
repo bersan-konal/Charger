@@ -60,7 +60,7 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "createReservationSegue" {
-                if let nextViewController = segue.destination as? CreateReservationViewController {
+                if let nextViewController = segue.destination as? StationsViewController {
                     nextViewController.city = self.city
                 }
             }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReservationViewViewModel {
+struct StationsViewViewModel {
     let city: String
     var address: String
     var distance: Float
