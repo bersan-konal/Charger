@@ -15,6 +15,8 @@ struct SocketResponseModel: Decodable {
 struct Sockets: Decodable {
     let socketID: Int
     let day: Day
+    let socketType: String
+    let chargeType: String
 }
 struct Day: Decodable {
     let id: Int

@@ -48,6 +48,15 @@ class SocketSelectionViewController: UIViewController, SocketSelectionViewModelD
         firstTableView.reloadData()
         secondTableView.reloadData()
         thirdTableView.reloadData()
+        
+        firstSocketInfoLabel.text = "\(sockets[0].chargeType) - \(sockets[0].socketType)"
+        if sockets.count > 1 {
+            secondSocketInfoLabel.text = "\(sockets[1].chargeType) - \(sockets[1].socketType)"
+        }
+        if sockets.count > 2 {
+            thirdSocketInfoLabel.text = "\(sockets[2].chargeType) - \(sockets[2].socketType)"
+        }
+        
     }
 }
 extension SocketSelectionViewController: UITableViewDelegate, UITableViewDataSource {
