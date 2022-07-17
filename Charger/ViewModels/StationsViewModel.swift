@@ -25,7 +25,7 @@ class StationsViewModel {
             }
             
             let items = filteredData.map {
-                StationsViewViewModel.init(city: $0.geoLocation.province, address: self.getDistrict(address: $0.geoLocation.address), distance: self.getDistance(distance: $0.distanceInKM ?? 0.0) , availableSockets: $0.socketCount - $0.occupiedSocketCount)
+                StationsViewViewModel.init(id: $0.id, city: $0.geoLocation.province, address: self.getDistrict(address: $0.geoLocation.address), distance: self.getDistance(distance: $0.distanceInKM ?? 0.0) , availableSockets: $0.socketCount - $0.occupiedSocketCount)
             }
             self.delegate?.didStationsFetch(items: items)
             print(items)

@@ -8,6 +8,7 @@
 import Foundation
 
 struct StationsViewViewModel {
+    let id: Int
     let city: String
     var address: String
     var distance: Float

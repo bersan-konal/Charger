@@ -28,11 +28,11 @@ class CitiesViewController: UIViewController, CitiesViewModelDelegate{
         searchBar.delegate = self
         tableView.backgroundColor = UIColor(named: "backgroundColor")
         searchBar.barTintColor = UIColor(named: "backgroundColor")
-        
         searchBar.searchTextField.textColor = .white
         
         // Do any additional setup after loading the view.
     }
+    
     func didCitiesFetch(data: [String]) {
         initialCities = data
         tableView.reloadData()

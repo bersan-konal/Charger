@@ -14,7 +14,7 @@ class StationsViewController: UIViewController {
     var reservationsVM = StationsViewModel()
     var stations: [StationsViewViewModel] = []
     var city: String?
-    
+    var stationId: Int?
     @IBOutlet weak var label: UILabel!
     
     
@@ -36,6 +36,7 @@ class StationsViewController: UIViewController {
         tableView.register(UINib(nibName: "ReservationTableViewCell", bundle: nil), forCellReuseIdentifier: "reservationCell")
         // Do any additional setup after loading the view.
     }
+    
 
 }
 extension StationsViewController: StationsViewModelDelegate {
@@ -55,17 +56,30 @@ extension StationsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.distanceLabel.text = "\(String(stations[indexPath.row].distance)) km"
         cell.availableSocketCount.text = "\(String(stations[indexPath.row].availableSockets)) / 3"
         cell.serviceHours.text = "24 saat"
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        label.text = "\(city ?? "") şehri için \(stations.count) sonuç gösteriliyor."
+        
         return stations.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.stationId = stations[indexPath.row].id
+        performSegue(withIdentifier: "socketSelectionSegue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "socketSelectionSegue" {
+            let destinationVC = segue.destination as! SocketSelectionViewController
+            
+            destinationVC.stationId = stationId
+        }
+    }
 }
 extension StationsViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -76,7 +90,8 @@ extension StationsViewController: CLLocationManagerDelegate {
                 if let city = city {
                     reservationsVM.didGetStations(city: city , userLat: latitude, userLong: longitude)
                     tableView.reloadData()
-                    label.text = "\(city) şehri için \(stations.count) sonuç gösteriliyor."
+                    
+                   
                     print(stations.count)
                 }
             }
