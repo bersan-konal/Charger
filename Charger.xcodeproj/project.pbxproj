@@ -20,7 +20,25 @@
 		3CB7363F287C5FD900CC2547 /* ReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7363E287C5FD900CC2547 /* ReservationsViewController.swift */; };
 		3CB73641287C6AD000CC2547 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73640287C6AD000CC2547 /* ProfileViewController.swift */; };
 		3CB73643287C6C5800CC2547 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73642287C6C5800CC2547 /* ProfileViewModel.swift */; };
-		3CB73645287C6F1F00CC2547 /* ReservationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */; };
+		3CB73645287C6F1F00CC2547 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73644287C6F1F00CC2547 /* StationsViewModel.swift */; };
+		3CB73648287DC60600CC2547 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73647287DC60600CC2547 /* UserManager.swift */; };
+		3CB7364A287DC6AE00CC2547 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73649287DC6AE00CC2547 /* UserViewModel.swift */; };
+		3CB7364C2880769E00CC2547 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7364B2880769E00CC2547 /* CitiesViewController.swift */; };
+		3CB7364E28807AF600CC2547 /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7364D28807AF600CC2547 /* CitiesViewModel.swift */; };
+		3CB7365028807B0200CC2547 /* CitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7364F28807B0200CC2547 /* CitiesService.swift */; };
+		3CB7365228818FDE00CC2547 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7365128818FDE00CC2547 /* StationsViewController.swift */; };
+		3CB736552881901C00CC2547 /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */; };
+		3CB736582881979500CC2547 /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736572881979500CC2547 /* StationsService.swift */; };
+		3CB7365A288197FB00CC2547 /* ReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73659288197FB00CC2547 /* ReservationModel.swift */; };
+		3CB7365D2881FE1A00CC2547 /* StationsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7365C2881FE1A00CC2547 /* StationsViewViewModel.swift */; };
+		3CB7365F2882DEDD00CC2547 /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */; };
+		3CB736612883338200CC2547 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736602883338200CC2547 /* ProfileService.swift */; };
+		3CB736632884315A00CC2547 /* SocketSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB736622884315900CC2547 /* SocketSelectionViewController.swift */; };
+		3CB73666288435D900CC2547 /* SocketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73664288435D900CC2547 /* SocketTableViewCell.swift */; };
+		3CB73667288435D900CC2547 /* SocketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB73665288435D900CC2547 /* SocketTableViewCell.xib */; };
+		3CB73669288437CC00CC2547 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB73668288437CC00CC2547 /* SocketService.swift */; };
+		3CB7366B28846D5500CC2547 /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7366A28846D5500CC2547 /* SocketModel.swift */; };
+		3CB7366D288471C400CC2547 /* SocketSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7366C288471C400CC2547 /* SocketSelectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +56,25 @@
 		3CB7363E287C5FD900CC2547 /* ReservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsViewController.swift; sourceTree = "<group>"; };
 		3CB73640287C6AD000CC2547 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3CB73642287C6C5800CC2547 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsViewModel.swift; sourceTree = "<group>"; };
+		3CB73644287C6F1F00CC2547 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		3CB73647287DC60600CC2547 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		3CB73649287DC6AE00CC2547 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3CB7364B2880769E00CC2547 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		3CB7364D28807AF600CC2547 /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
+		3CB7364F28807B0200CC2547 /* CitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesService.swift; sourceTree = "<group>"; };
+		3CB7365128818FDE00CC2547 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
+		3CB736572881979500CC2547 /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
+		3CB73659288197FB00CC2547 /* ReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationModel.swift; sourceTree = "<group>"; };
+		3CB7365C2881FE1A00CC2547 /* StationsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewViewModel.swift; sourceTree = "<group>"; };
+		3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReservationTableViewCell.xib; sourceTree = "<group>"; };
+		3CB736602883338200CC2547 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		3CB736622884315900CC2547 /* SocketSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketSelectionViewController.swift; sourceTree = "<group>"; };
+		3CB73664288435D900CC2547 /* SocketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTableViewCell.swift; sourceTree = "<group>"; };
+		3CB73665288435D900CC2547 /* SocketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocketTableViewCell.xib; sourceTree = "<group>"; };
+		3CB73668288437CC00CC2547 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		3CB7366A28846D5500CC2547 /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
+		3CB7366C288471C400CC2547 /* SocketSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketSelectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,7 @@
 			children = (
 				3C81D9022872C80700B7270E /* AppDelegate.swift */,
 				3C81D9042872C80700B7270E /* SceneDelegate.swift */,
+				3CB73647287DC60600CC2547 /* UserManager.swift */,
 				3C81D91D2879CFCA00B7270E /* Models */,
 				3C81D91C2879CFBB00B7270E /* ViewModels */,
 				3C81D9162872D29000B7270E /* ViewControllers */,
@@ -91,6 +128,9 @@
 				3C81D9062872C80700B7270E /* LoginViewController.swift */,
 				3CB7363E287C5FD900CC2547 /* ReservationsViewController.swift */,
 				3CB73640287C6AD000CC2547 /* ProfileViewController.swift */,
+				3CB7364B2880769E00CC2547 /* CitiesViewController.swift */,
+				3CB7365128818FDE00CC2547 /* StationsViewController.swift */,
+				3CB736622884315900CC2547 /* SocketSelectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -99,6 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				3C81D9082872C80700B7270E /* Main.storyboard */,
+				3CB7365E2882DEDC00CC2547 /* ReservationTableViewCell.xib */,
+				3CB736532881901C00CC2547 /* ReservationTableViewCell.swift */,
+				3CB73664288435D900CC2547 /* SocketTableViewCell.swift */,
+				3CB73665288435D900CC2547 /* SocketTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,7 +152,9 @@
 			children = (
 				3C81D9262879D52E00B7270E /* LoginViewModel.swift */,
 				3CB73642287C6C5800CC2547 /* ProfileViewModel.swift */,
-				3CB73644287C6F1F00CC2547 /* ReservationsViewModel.swift */,
+				3CB73644287C6F1F00CC2547 /* StationsViewModel.swift */,
+				3CB7364D28807AF600CC2547 /* CitiesViewModel.swift */,
+				3CB7366C288471C400CC2547 /* SocketSelectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -117,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				3C81D9242879D37300B7270E /* LoginModel.swift */,
+				3CB73659288197FB00CC2547 /* ReservationModel.swift */,
+				3CB7366A28846D5500CC2547 /* SocketModel.swift */,
+				3CB7365B2881FDF900CC2547 /* View ViewModels */,
 				3C81D91E2879CFD500B7270E /* Services */,
 			);
 			path = Models;
@@ -126,8 +175,21 @@
 			isa = PBXGroup;
 			children = (
 				3C81D9222879D0BF00B7270E /* LoginService.swift */,
+				3CB7364F28807B0200CC2547 /* CitiesService.swift */,
+				3CB736572881979500CC2547 /* StationsService.swift */,
+				3CB736602883338200CC2547 /* ProfileService.swift */,
+				3CB73668288437CC00CC2547 /* SocketService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3CB7365B2881FDF900CC2547 /* View ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CB73649287DC6AE00CC2547 /* UserViewModel.swift */,
+				3CB7365C2881FE1A00CC2547 /* StationsViewViewModel.swift */,
+			);
+			path = "View ViewModels";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +258,9 @@
 			files = (
 				3C81D90F2872C80900B7270E /* LaunchScreen.storyboard in Resources */,
 				3C81D90C2872C80900B7270E /* Assets.xcassets in Resources */,
+				3CB7365F2882DEDD00CC2547 /* ReservationTableViewCell.xib in Resources */,
 				3C81D90A2872C80700B7270E /* Main.storyboard in Resources */,
+				3CB73667288435D900CC2547 /* SocketTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,16 +271,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB73666288435D900CC2547 /* SocketTableViewCell.swift in Sources */,
+				3CB736582881979500CC2547 /* StationsService.swift in Sources */,
 				3C81D9252879D37300B7270E /* LoginModel.swift in Sources */,
+				3CB7364A287DC6AE00CC2547 /* UserViewModel.swift in Sources */,
 				3C81D9072872C80700B7270E /* LoginViewController.swift in Sources */,
+				3CB7364E28807AF600CC2547 /* CitiesViewModel.swift in Sources */,
+				3CB7365A288197FB00CC2547 /* ReservationModel.swift in Sources */,
 				3CB7363F287C5FD900CC2547 /* ReservationsViewController.swift in Sources */,
-				3CB73645287C6F1F00CC2547 /* ReservationsViewModel.swift in Sources */,
+				3CB7366B28846D5500CC2547 /* SocketModel.swift in Sources */,
+				3CB73669288437CC00CC2547 /* SocketService.swift in Sources */,
+				3CB736552881901C00CC2547 /* ReservationTableViewCell.swift in Sources */,
+				3CB7365228818FDE00CC2547 /* StationsViewController.swift in Sources */,
+				3CB73645287C6F1F00CC2547 /* StationsViewModel.swift in Sources */,
 				3CB73643287C6C5800CC2547 /* ProfileViewModel.swift in Sources */,
+				3CB7366D288471C400CC2547 /* SocketSelectionViewModel.swift in Sources */,
 				3C81D9272879D52E00B7270E /* LoginViewModel.swift in Sources */,
 				3C81D9032872C80700B7270E /* AppDelegate.swift in Sources */,
 				3C81D9052872C80700B7270E /* SceneDelegate.swift in Sources */,
+				3CB736632884315A00CC2547 /* SocketSelectionViewController.swift in Sources */,
+				3CB7365D2881FE1A00CC2547 /* StationsViewViewModel.swift in Sources */,
 				3CB73641287C6AD000CC2547 /* ProfileViewController.swift in Sources */,
+				3CB73648287DC60600CC2547 /* UserManager.swift in Sources */,
 				3C81D9232879D0BF00B7270E /* LoginService.swift in Sources */,
+				3CB7364C2880769E00CC2547 /* CitiesViewController.swift in Sources */,
+				3CB7365028807B0200CC2547 /* CitiesService.swift in Sources */,
+				3CB736612883338200CC2547 /* ProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

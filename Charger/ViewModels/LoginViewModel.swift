@@ -13,7 +13,7 @@ import Alamofire
 
 class LoginViewModel {
     var loginService: LoginService
-    let defaults = UserDefaults.standard
+    //let defaults = UserDefaults.standard
     
     init() {
         loginService = LoginService()
@@ -21,9 +21,11 @@ class LoginViewModel {
     
     func didLogin(email: String, udid: String) {
         loginService.loginWithEmail(email: email, udid: udid) { response in
-            self.defaults.set(response.token, forKey: "token")
-            self.defaults.set(response.userID, forKey: "userId")
-            self.defaults.set(response.email, forKey: "email")
+           // self.defaults.set(response.token, forKey: "token")
+            //self.defaults.set(response.userID, forKey: "userId")
+            //self.defaults.set(response.email, forKey: "email")
+            let user = UserViewModel(userId: response.userID, token: response.token, email: response.email,udid: udid)
+            UserManager.shared.currentUser = user
             print(response)
            
             //buradan kalkacak bu (city)
@@ -31,5 +33,6 @@ class LoginViewModel {
             
         }
     }
+    
     
 }
